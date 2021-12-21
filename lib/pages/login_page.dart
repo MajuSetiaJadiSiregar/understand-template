@@ -1,7 +1,8 @@
 part of 'page.dart';
 
 class LoginPage extends Pages {
-  const LoginPage({Key? key}) : super(key: key);
+  final LoginPageController loginPageController = Get.put(LoginPageController());
+  LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -137,7 +138,9 @@ class LoginPage extends Pages {
                             )
                         ),
                         child: CustomButton.buttonElevatedButton(
-                          eventButton: (){print('event');},
+                          eventButton: (){
+                            loginPageController.goToPage();
+                          },
                           titleButton: Center(
                             child: Text(
                               "Login", 
