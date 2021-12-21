@@ -5,10 +5,10 @@ class CustomButton {
   CustomButton._internal();
   factory CustomButton() => _instance;
 
-  Widget buttonElevatedButton({Widget? titleButton, Function? eventButton})
+  static Widget buttonElevatedButton({Widget? titleButton, VoidCallback? eventButton})
   {
     return ElevatedButton(
-      onPressed: (eventButton != null) ? eventButton() : (){print('No Event');},
+      onPressed: (eventButton != null) ? eventButton : (){print('no event');},
       child: (titleButton != null) ? titleButton : const Center(child: Text('No Title'),),
     );
   }

@@ -132,16 +132,9 @@ class LoginPage extends Pages {
                                 ]
                             )
                         ),
-                        // child: CustomButton.buttonElevatedButton(
-                        //   eventButton: (){print('event');},
-                        //   titleButton: Center(child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),)
-                        // )
-                        child: ElevatedButton(
-                          onPressed: (){ print('abc');
-                          },
-                          child: const Center(
-                            child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                          ),
+                        child: CustomButton.buttonElevatedButton(
+                          eventButton: (){print('event');},
+                          titleButton: Center(child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),)
                         )
                     ),
                   ],
