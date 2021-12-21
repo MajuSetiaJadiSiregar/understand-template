@@ -102,8 +102,10 @@ class LoginPage extends Pages {
                             child: CustomTextField.textField(
                               decoration: CustomInputDecoration.inputDecoration(
                                 placeHolder: "Username",
-                                placeHolderStyle: TextStyle(color: Colors.grey[400]),
-                                border: InputBorder.none
+                                border: InputBorder.none,
+                                placeHolderStyle: CustomTextStyle.textStyle(
+                                  warnaText: HexColor("#808080")
+                                )
                               ),
                             ),
                           ),
@@ -113,7 +115,9 @@ class LoginPage extends Pages {
                               decoration: CustomInputDecoration.inputDecoration(
                                 border: InputBorder.none,
                                 placeHolder: 'Password',
-                                placeHolderStyle: TextStyle(color: Colors.grey[400])
+                                placeHolderStyle: CustomTextStyle.textStyle(
+                                  warnaText: HexColor("#808080")
+                                )
                               )
                             ),
                           )
@@ -134,7 +138,15 @@ class LoginPage extends Pages {
                         ),
                         child: CustomButton.buttonElevatedButton(
                           eventButton: (){print('event');},
-                          titleButton: Center(child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),)
+                          titleButton: Center(
+                            child: Text(
+                              "Login", 
+                              style: CustomTextStyle.textStyle(
+                                warnaText: HexColor("#ffffff"),
+                                ketebalanText: FontWeight.bold
+                              ),
+                            ),
+                          )
                         )
                     ),
                   ],
