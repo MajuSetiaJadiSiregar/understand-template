@@ -60,7 +60,7 @@ class LoginPage extends Pages {
                     Positioned(
                       child: Container(
                         margin: const EdgeInsets.only(top: 50),
-                        child: Center(
+                        child: const Center(
                           child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
                         ),
                       ),
@@ -69,15 +69,15 @@ class LoginPage extends Pages {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(30.0),
                 child: Column(
                   children: <Widget>[
                     Container(
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 color: Color.fromRGBO(143, 148, 251, .2),
                                 blurRadius: 20.0,
@@ -88,11 +88,11 @@ class LoginPage extends Pages {
                       child: Column(
                         children: <Widget>[
                           Container(
-                            padding: EdgeInsets.all(8.0),
-                            decoration: BoxDecoration(
+                            padding: const EdgeInsets.all(8.0),
+                            decoration: const BoxDecoration(
                                 border: Border(bottom: BorderSide(color: Colors.grey))
                             ),
-                            child: TextField(
+                            child: CustomTextField.textField(
                               decoration: CustomInputDecoration.inputDecoration(
                                 placeHolder: "Username",
                                 placeHolderStyle: TextStyle(color: Colors.grey[400]),
@@ -101,24 +101,24 @@ class LoginPage extends Pages {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(8.0),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Password",
-                                  hintStyle: TextStyle(color: Colors.grey[400])
-                              ),
+                            padding: const EdgeInsets.all(8.0),
+                            child: CustomTextField.textField(
+                              decoration: CustomInputDecoration.inputDecoration(
+                                border: InputBorder.none,
+                                placeHolder: 'Password',
+                                placeHolderStyle: TextStyle(color: Colors.grey[400])
+                              )
                             ),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    const SizedBox(height: 30,),
                     Container(
                         height: 50,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            gradient: LinearGradient(
+                            gradient: const LinearGradient(
                                 colors: [
                                   Color.fromRGBO(143, 148, 251, 1),
                                   Color.fromRGBO(143, 148, 251, .6),
@@ -128,7 +128,7 @@ class LoginPage extends Pages {
                         child: ElevatedButton(
                           onPressed: (){
                           },
-                          child: Center(
+                          child: const Center(
                             child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
                           ),
                         )

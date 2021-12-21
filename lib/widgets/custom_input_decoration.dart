@@ -1,8 +1,8 @@
 part of 'widget.dart';
 
 class CustomInputDecoration extends InputDecoration {
-  static final CustomInputDecoration _instance = CustomInputDecoration._internal();
-  CustomInputDecoration._internal();
+  static const CustomInputDecoration _instance = CustomInputDecoration._internal();
+  const CustomInputDecoration._internal();
   factory CustomInputDecoration() => _instance;
 
 
