@@ -93,10 +93,10 @@ class LoginPage extends Pages {
                                 border: Border(bottom: BorderSide(color: Colors.grey))
                             ),
                             child: TextField(
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Email or Phone number",
-                                  hintStyle: TextStyle(color: Colors.grey[400])
+                              decoration: CustomInputDecoration.inputDecoration(
+                                placeHolder: "Username",
+                                placeHolderStyle: TextStyle(color: Colors.grey[400]),
+                                border: InputBorder.none
                               ),
                             ),
                           ),
