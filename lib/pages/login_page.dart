@@ -60,8 +60,15 @@ class LoginPage extends Pages {
                     Positioned(
                       child: Container(
                         margin: const EdgeInsets.only(top: 50),
-                        child: const Center(
-                          child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
+                        child: Center(
+                          child: Text(
+                            'Login',
+                            style: CustomTextStyle.textStyle(
+                              warnaText: Colors.white,
+                              ukuranText: 40.0,
+                              ketebalanText: FontWeight.bold
+                            ),
+                          ),
                         ),
                       ),
                     )
