@@ -6,4 +6,3 @@ import 'package:refactor_template/utils/util.dart';
 import 'package:refactor_template/widgets/widget.dart';
 
 part 'login_page.dart';
-part 'navigation_home_page.dart';

@@ -8,6 +8,6 @@ class LoginPageController extends GetxController {
 
   void goToPage()
   {
-    Get.to(() => NavigationHomePage());
+    // Get.to(() => NavigationHomePage());
   }
 }
