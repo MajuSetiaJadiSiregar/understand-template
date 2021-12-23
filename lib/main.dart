@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:refactor_template/buttom-navigation-i/main_page_bottom.dart';
 import 'package:refactor_template/drawer-custom-ii/main_page_drawer_ii.dart';
 import 'package:refactor_template/drawer-customs/app_theme.dart';
 import 'package:refactor_template/drawer-customs/navigation_home_screen.dart';
@@ -150,7 +151,8 @@ class MyApp extends StatelessWidget {
         platform: TargetPlatform.iOS,
       ),
       // home: NavigationHomeScreen(),
-      home: MainPageDrawerIi(),
+      // home: MainPageDrawerIi(),
+      home: MainPage(),
     );
   }
 }
